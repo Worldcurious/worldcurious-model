@@ -3,6 +3,6 @@ pub struct Industry {
 }
 
 pub enum IndustryType {
-    REGULAR,
-    MILITARY,
+    Regular,
+    Military,
 }
