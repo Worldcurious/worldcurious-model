@@ -1,3 +1,3 @@
-pub struct Economy {
+pub struct Economy<T> {
     // TODO
 }
