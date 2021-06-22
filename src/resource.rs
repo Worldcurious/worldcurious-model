@@ -3,26 +3,32 @@ pub trait Resource {
 }
 
 pub struct BaseResource {
-    // TODO
+    id: u32,
+    name: String,
 }
 
 pub struct Labor {
-    // TODO
+    id: u32,
+    name: String,
 }
 
 pub struct Material {
-    // TODO
+    id: u32,
+    name: String,
 }
 
 pub struct CapitalGood {
-    // TODO
+    id: u32,
+    name: String,
 }
 
 pub struct Crop {
-    // TODO
+    id: u32,
+    name: String,
 }
 
 pub struct Livestock {
-    // TODO
+    id: u32,
+    name: String,
 }
 
