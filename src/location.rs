@@ -28,7 +28,13 @@ mod location {
         id: u32,
         name: String,
         population: u64,
+        
         econ: Economy<Region>,
+
+        faction: Faction,
+        capital: City,
+
+        cities: Vec<City>,
     }
     
     pub struct City {
