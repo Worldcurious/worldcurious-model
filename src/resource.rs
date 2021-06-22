@@ -4,14 +4,16 @@ pub trait Resource {
     // TODO
 }
 
-pub struct BaseResource {
-    id: u32,
-    name: String,
-
-    importMarkets: Vec<trade::TradeExchange>,
-    exportMarkets: Vec<trade::TradeExchange>,
-
-    economies: Vec<economy::Economy>,
+pub mod base_resource {
+    pub struct BaseResource {
+        id: u32,
+        name: String,
+    
+        importMarkets: Vec<trade::TradeExchange>,
+        exportMarkets: Vec<trade::TradeExchange>,
+    
+        economies: Vec<economy::Economy>,
+    }
 }
 
 pub mod labor {
@@ -33,21 +35,24 @@ pub mod labor {
     }
 }
 
-
-pub struct Component {
-    id: u32,
-    name: String,
-
-    importMarkets: Vec<trade::TradeExchange>,
-    exportMarkets: Vec<trade::TradeExchange>,
+pub mod component {
+    pub struct Component {
+        id: u32,
+        name: String,
+    
+        importMarkets: Vec<trade::TradeExchange>,
+        exportMarkets: Vec<trade::TradeExchange>,
+    }
 }
 
-pub struct CapitalGood {
-    id: u32,
-    name: String,
-
-    importMarkets: Vec<trade::TradeExchange>,
-    exportMarkets: Vec<trade::TradeExchange>,
+pub mod capital_good {
+    pub struct CapitalGood {
+        id: u32,
+        name: String,
+    
+        importMarkets: Vec<trade::TradeExchange>,
+        exportMarkets: Vec<trade::TradeExchange>,
+    }
 }
 
 pub mod crop {
