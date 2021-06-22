@@ -1,4 +1,5 @@
-use economy;
+mod economy;
+mod government;
 
 mod location {
     pub trait Location {
@@ -9,7 +10,8 @@ mod location {
         id: u32,
         name: String,
         population: u64,
-        econ: Economy<Faction>,
+        econ: economy::Economy<Faction>,
+        gov: government::Government,
     }
     
     pub struct Region {
