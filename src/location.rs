@@ -1,5 +1,6 @@
 mod economy;
 mod government;
+mod trade;
 
 mod location {
     pub trait Location {
@@ -41,6 +42,13 @@ mod location {
         id: u32,
         name: String,
         population: u64,
+
         econ: Economy<City>,
+
+        faction: Faction,
+        region: Region,
+
+        markets: Vec<trade::TradeExchange>,
+
     }
 }
