@@ -1,21 +1,28 @@
-pub trait Location {
-    // TODO
-}
+use economy;
 
-pub struct Faction {
-    id: u32,
-    name: String,
-    population: u64,
-}
-
-pub struct Region {
-    id: u32,
-    name: String,
-    population: u64,
-}
-
-pub struct City {
-    id: u32,
-    name: String,
-    population: u64,
+mod location {
+    pub trait Location {
+        // TODO
+    }
+    
+    pub struct Faction {
+        id: u32,
+        name: String,
+        population: u64,
+        econ: Economy<Faction>,
+    }
+    
+    pub struct Region {
+        id: u32,
+        name: String,
+        population: u64,
+        econ: Economy<Region>,
+    }
+    
+    pub struct City {
+        id: u32,
+        name: String,
+        population: u64,
+        econ: Economy<City>,
+    }
 }
