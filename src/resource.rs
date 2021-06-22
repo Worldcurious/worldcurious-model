@@ -1,4 +1,5 @@
 mod trade;
+mod industry;
 
 pub trait Resource {
     // TODO
@@ -11,6 +12,9 @@ pub mod base_resource {
     
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
+
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
     
         economies: Vec<economy::Economy>,
     }
@@ -24,6 +28,9 @@ pub mod labor {
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
     
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
+
         laborType: LaborType,
     }
     
@@ -42,6 +49,9 @@ pub mod component {
     
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
+
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
     }
 }
 
@@ -52,6 +62,9 @@ pub mod capital_good {
     
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
+
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
     }
 }
 
@@ -62,6 +75,9 @@ pub mod crop {
     
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
+
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
     
         cropType: CropType,
         kcalPerAcre: u32,
@@ -81,6 +97,9 @@ pub mod livestock {
     
         importMarkets: Vec<trade::TradeExchange>,
         exportMarkets: Vec<trade::TradeExchange>,
+
+        producers: Vec<industry::Industry>,
+        consumers: Vec<industry::Industry>,
 
         uses: Vec<LivestockUse>,
     }
