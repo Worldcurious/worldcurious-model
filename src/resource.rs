@@ -5,6 +5,18 @@ pub trait Resource {
     // TODO
 }
 
+pub mod substitue_resource_set {
+    pub struct SubstitueResourceSet {
+        id: u32,
+
+        substituteInputs: 
+    }
+
+    enum AbstractResource {
+        // TODO
+    }
+}
+
 pub mod base_resource {
     pub struct BaseResource {
         id: u32,
